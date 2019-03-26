@@ -1,32 +1,33 @@
 <?php
     $setting = Cache::get('setting');    
 ?>
-
 <footer>
     <div class="container">
-        <div class="row top">
-            <div class="col-md-5 info pdl-0">
-                <div class="box-logo"><a href="" title=""><img src="{{asset('upload/hinhanh/'.$setting->photo_footer)}}" alt=""></a></div>
-                <h3>Hợp tác xã tổng hợp chè thành công</h3>
-                <p>Xưởng sản xuất: {{$setting->address}}</p>
-                <p>Cửa hàng GTSP: Số nhà 177 -181 Đông Ngạc - Bắc Từ Liêm - Hà Nội</p>
-                <p>SĐT: {{$setting->phone}} - {{$setting->hotline}} - {{$setting->copyright}}</p>
+        <div class="row r1"> 
+            <div class="col-md-4 col-xs-12">
+                <a href="{{url('')}}" title=""><img src="{{asset('upload/hinhanh/'.$setting->photo_footer)}}" alt=""></a>
+                <p class="company-name">{{$setting->company}}</p>
+                <p class="info-company"><i class="fa fa-map-marker"></i> {{$setting->address}}</p>
+                <p class="info-company"><i class="fa fa-phone"></i> {{$setting->phone}} - {{$setting->hotline}}</p>
             </div>
-            <div class="col-md-4">
-                <p class="map">Bản đồ</p>
-                <div class="box-map">
-                    {!! $setting->iframemap !!}
+            <div class="col-md-4 col-xs-12 news-letter">
+                <p class="title-newsletter">Để lại email nhận tin khuyến mại</p>
+                <form action="" method="post" accept-charset="utf-8">
+                    <input type="text" value="Nhập email" class="form-control" name="email">
+                    <button type="submit" class="btn-newsletter">Gửi</button>
+                </form>
+                <div class="social">
+                    <a href="{{$setting->facebook}}" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="{{$setting->google}}"  target="_blank" title="Google"><i class="fa fa-google"></i></a>
+                    <a href="{{$setting->twitter}}" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="{{$setting->skype}}" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="col-md-3 pdr-0">
-                <p class="map">Fanpage</p>
-                <div class="box-page box-map">
-                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
-                </div>
-            </div> 
+            <div class="col-md-4 col-xs-12 news-letter" style="margin-bottom: 20px;">
+                <p class="title-newsletter">Fanpage</p>
+                <div class="fb-page" data-href="{{$setting->facebook}}" data-tabs="timeline" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="{{$setting->facebook}}" class="fb-xfbml-parse-ignore"><a href="{{$setting->facebook}}">Facebook</a></blockquote></div>
+            </div>           
         </div>
-        <div class="row">
-            <p style="text-align: center; margin-bottom: 30px;">Designed by hungthinhads.com</p>
-        </div>
+        <p style="text-align: center; margin-top: 10px;">Designed by Hungthinhads.com</p>
     </div>
 </footer>

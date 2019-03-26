@@ -199,7 +199,7 @@ class IndexController extends Controller {
 			$img_share = asset('upload/product/'.$product_detail->photo);
 			
 			// End cấu hình SEO
-			return view('templates.product_detail_tpl', compact('product_detail','banner_danhmuc','keyword','description','title','img_share','product_khac','album_hinh','cateProduct','productSameCate','tintucs','cate_pro','colors', 'productDaXem'));
+			return view('templates.product_detail_tpl', compact('product_detail','banner_danhmuc','keyword','description','title','img_share','album_hinh','cateProduct','productSameCate','cate_pro', 'productDaXem'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}
@@ -215,7 +215,7 @@ class IndexController extends Controller {
 		$description = 'Giới thiệu';
 		// End cấu hình SEO
 
-		return view('templates.about_tpl', compact('about','keyword','description','title','img_share','com'));
+		return view('templates.about_tpl', compact('about','keyword','description','title','com'));
 	}
 	public function baogia()
 	{
@@ -254,7 +254,7 @@ class IndexController extends Controller {
 		$description = "Tin tức";
 		$img_share = '';
 		// End cấu hình SEO
-		return view('templates.news_tpl', compact('tintuc','keyword','description','title','img_share','com','cateNews','hot_news'));
+		return view('templates.news_tpl', compact('tintuc','keyword','description','title','img_share','com','hot_news'));
 	}
 	public function getVanHoa()
 	{
@@ -433,8 +433,6 @@ class IndexController extends Controller {
 		return redirect()->back()->with('mess','Cảm ơn bạn đã gửi yêu cầu. Chúng tôi sẽ liên hệ lại với bạn sớm nhất !');
 	}
 
-	
-	
 
 	public function getCart()
 	{
@@ -452,7 +450,7 @@ class IndexController extends Controller {
 		$description = "Giỏ hàng";
 		$img_share = '';
 		// End cấu hình SEO
-		return view('templates.giohang_tpl', compact('doitac','product_cart','district','product_noibat','province','keyword','description','title','img_share','total', 'bank'));
+		return view('templates.giohang_tpl', compact('product_cart','product_noibat','province','keyword','description','title','img_share','total', 'bank'));
 	}
 
 	public function addCart(Request $req)

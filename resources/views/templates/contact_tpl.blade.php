@@ -18,12 +18,12 @@
     </nav>
     <div class="content-box-contact" style="margin-bottom: 30px;">
         <div class="container">
-            <div class="row info-company">
+            <div class="row info-companyx">
                 <div class="col-sm-4">
                     <h1 class="title-contact">Liên Hệ</h1>
                     
                     <p><span class="fwb">Địa chỉ:</span> {{$setting->address}}</p>
-                    <p><span class="fwb">Số điện thoại:</span> {{$setting->phone}}</p>
+                    <p><span class="fwb">Số điện thoại:</span> {{$setting->phone}} - {{$setting->hotline}}</p>
                     <p><span class="fwb">Email:</span> {{$setting->email}}</p>
                 </div>
                 <div class="col-sm-8">
@@ -31,25 +31,25 @@
                     <form action="{{route('postContact')}}" method="post" accept-charset="utf-8" class="contact-frm">
                     	{{csrf_field()}}
                         <div class="row">                                
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="margin-bottom: 10px;">
                                     <label for="">Họ tên</label>                                       
                                     <input type="text" name="name" value="" required="" class="form-control" placeholder="">                                    
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="margin-bottom: 10px;">
                                     <label for="">Địa chỉ</label>
                                     <input type="text" name="address" value="" required="" class="form-control" placeholder="">                                        
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="margin-bottom: 10px;">
                                     <label for="">Số điện thoại</label>
                                     <input type="text" name="phone" value="" required="" class="form-control" placeholder="">
                                     
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="margin-bottom: 10px;">
                                     <label for="">Email</label>
                                     <input type="text" name="email" value="" class="form-control" placeholder="">
                                     
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12" style="margin-bottom: 10px;">
                                     <label for="">Nội dung</label>
                                     <textarea name="content" rows="5" required="" class="form-control" placeholder="Nội dung"></textarea>
                                 </div>

@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-<div class="content-home">
+<div class="content-home" style="margin-bottom: 30px;">
     <div class="container">
         <div class="">
             <div class="vk-page vk-page--shopcart">

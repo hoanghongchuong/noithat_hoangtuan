@@ -25,7 +25,7 @@ class ContactController extends Controller {
 		$about_lienhe = DB::table('about')->select()->where('com','lien-he')->get()->first();
 		$banner_danhmuc = DB::table('lienket')->select()->where('status',1)->where('com','chuyen-muc')->where('link','lien-he')->get()->first();
 		$province = DB::table('province')->get();
-        return view('templates.contact_tpl', compact('banner_danhmuc','lien-he','province','about_lienhe','keyword','description','title','img_share','com','chinhanhs'));
+        return view('templates.contact_tpl', compact('banner_danhmuc','province','about_lienhe','keyword','description','title','img_share','com','chinhanhs'));
     }
 
     /**

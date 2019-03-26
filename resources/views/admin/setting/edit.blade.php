@@ -75,28 +75,28 @@
 								      	<label for="ten">Link trang sản phẩm</label>
 								      	<input type="text" name="txtTitle_index" value="{!! old('txtTitle_index', isset($data) ? $data->title_index : null) !!}"  class="form-control" />
 									</div> -->
-									<div class="form-group">
+									<!-- <div class="form-group">
 								      	<label for="ten">Số điện thoại 13</label>
 								      	<input type="text" name="txtCopyright" value="{!! old('txtCopyright', isset($data) ? $data->copyright : null) !!}"  class="form-control" />
-									</div>
+									</div> -->
 								</div>
 								<div class="col-md-6 col-xs-12">
 									<div class="form-group">
 								      	<label for="ten">Facebook</label>
 								      	<input type="text" name="txtFacebook" value="{!! old('txtFacebook', isset($data) ? $data->facebook : null) !!}"  class="form-control" />
 									</div>
-									<!-- <div class="form-group">
+									<div class="form-group">
 								      	<label for="ten">Twitter</label>
 								      	<input type="text" name="txtTwitter" value="{!! old('txtTwitter', isset($data) ? $data->twitter : null) !!}"  class="form-control" />
-									</div> -->
+									</div>
 									<div class="form-group">
 								      	<label for="ten">Google</label>
 								      	<input type="text" name="txtGoogle" value="{!! old('txtGoogle', isset($data) ? $data->google : null) !!}"  class="form-control" />
 									</div>
-									<!-- <div class="form-group">
-								      	<label for="ten">Skype</label>
+									<div class="form-group">
+								      	<label for="ten">Instagram</label>
 								      	<input type="text" name="txtSkype" value="{!! old('txtSkype', isset($data) ? $data->skype : null) !!}"  class="form-control" />
-									</div> -->
+									</div>
 									<!-- <div class="form-group">
 								      	<label for="ten">Youtube</label>
 								      	<input type="text" name="txtYoutube" value="{!! old('txtYoutube', isset($data) ? $data->youtube : null) !!}"  class="form-control" />
