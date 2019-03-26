@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/cus.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/phone.css" />
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script> 
@@ -42,7 +43,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-2 box-count-cart">
+                    <div class="col-md-2 box-count-cart col-xs-12">
                         <div class="box-shopping-cart">
                             <a href="">
                                 <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
@@ -55,70 +56,7 @@
             </div>            
         </div>
     </header><!-- /header -->
-    <div class="menu-cate">
-        <div class="top-menu">
-            <div class="col-md-3"></div>
-            <div class="col-md-9 menu">
-                <ul class="navi">
-                    <li class="active"><a href="">Trang chủ</a></li>
-                    <li><a href="">Giới thiệu</a></li>
-                    <li>
-                        <a href="">Sản phẩm hot</a>
-                            <ul class="vk-menu__child">                                
-                            <li><a href="#">Thiết kế 1</a></li>
-                            <li><a href="#">Thiết kế 1</a></li>
-                            <li><a href="#">Thiết kế 1</a></li>                        
-                        </ul>
-                    </li>
-                    <li><a href="">Tin tức</a></li>
-                    <li><a href="">Liên hệ</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="bot-menu">
-            <div class="col-md-3 hidden-xs hidden-sm">
-                <h3 class="title-cate">Danh mục sản phẩm</h3>
-                <div class="list-cate-home">
-                    <ul>
-                        <li><a href="">Giường ngủ</a></li>
-                        <li><a href="">Tủ</a></li>
-                        <li><a href="">Bàn trang điểm</a></li>
-                        <li><a href="">Táp đầu giường</a></li>
-                    </ul>
-                </div>
-            </div>    
-            <div class="col-md-9 col-xs-12 slider">
-                <div id="carousel-id" class="carousel slide" data-ride="carousel">
-                    
-                    <div class="carousel-inner">
-                        <div class="item ">
-                            <img  alt="Third slide" src="images/banner.jpg">
-                            <!-- <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>One more for good measure.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="item active">
-                            <img  alt="Third slide" src="images/banner.jpg">
-                            <!-- <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>One more for good measure.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
-            </div>    
-        </div>
-    </div>
-    <div class="visible-xs visible-sm">
+    <div class="visible-xs visible-sm menu-mobile">
         <div class="vk-header__search">
             <div class="container">                
                 <a href="#menuMobile" class="menu_Mobile" data-toggle="collapse" class="_btn d-lg-none menu_title"><i class="fa fa-bars"></i> Menu</a>
@@ -147,6 +85,99 @@
             </ul>
         </nav>        
     </div>
+    <div class="slider-mobile visible-xs">
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                    
+            <div class="carousel-inner">
+                <div class="item ">
+                    <img  alt="Third slide" src="images/banner.jpg">
+                    <!-- <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="item active">
+                    <img  alt="Third slide" src="images/banner.jpg">
+                    <!-- <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+    </div>
+    <div class="menu-cate visible-md visible-lg">
+        <div class="top-menu">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 menu ">
+                <ul class="navi">
+                    <li class="active"><a href="">Trang chủ</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li>
+                        <a href="">Sản phẩm hot</a>
+                            <ul class="vk-menu__child">                                
+                            <li><a href="#">Thiết kế 1</a></li>
+                            <li><a href="#">Thiết kế 1</a></li>
+                            <li><a href="#">Thiết kế 1</a></li>                        
+                        </ul>
+                    </li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bot-menu hidden-xs hidden-sm">
+            <div class="col-md-3 ">
+                <h3 class="title-cate">Danh mục sản phẩm</h3>
+                <div class="list-cate-home">
+                    <ul>
+                        <li><a href="">Giường ngủ</a></li>
+                        <li><a href="">Tủ</a></li>
+                        <li><a href="">Bàn trang điểm</a></li>
+                        <li><a href="">Táp đầu giường</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="col-md-9 col-xs-12 slider">
+                <div id="carousel-id1" class="carousel slide" data-ride="carousel">
+                    
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img  alt="Third slide" src="images/banner.jpg">
+                            <!-- <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>One more for good measure.</h1>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="item active">
+                            <img  alt="Third slide" src="images/banner.jpg">
+                            <!-- <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>One more for good measure.</h1>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-id1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carousel-id1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
     
     <div class="slogan-home">
         <div class="container">
@@ -446,24 +477,44 @@
     </div>
     <footer>
         <div class="container">
-            <div class="row"> 
-                <div class="col-md-3 col-xs-12">
+            <div class="row r1"> 
+                <div class="col-md-4 col-xs-12">
                     <a href="" title=""><img src="images/logofooter.png" alt=""></a>
                     <p class="company-name">Nội thất Hoàng Tuấn</p>
                     <p class="info-company"><i class="fa fa-map-marker"></i> Ngõ Giếng, Hoàng Cầu, Hà Nội</p>
                     <p class="info-company"><i class="fa fa-phone"></i> 0987654231 - 0987654321</p>
                 </div>
-                <div class="col-md-3 col-xs-12 news-letter">
+                <div class="col-md-4 col-xs-12 news-letter">
                     <p class="title-newsletter">Để lại email nhận tin khuyến mại</p>
                     <form action="" method="post" accept-charset="utf-8">
                         <input type="text" value="Nhập email" class="form-control" name="email">
                         <button type="submit" class="btn-newsletter">Gửi</button>
                     </form>
-                </div>               
+                    <div class="social">
+                        <a href="" title=""><i class="fa fa-facebook"></i></a>
+                        <a href="" title=""><i class="fa fa-google"></i></a>
+                        <a href="" title=""><i class="fa fa-twitter"></i></a>
+                        <a href="" title=""><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 news-letter">
+                    <p class="title-newsletter">Fanpage</p>
+                </div>           
             </div>
+            <p style="text-align: center; margin-top: 10px;">Designed by Hungthinhads.com</p>
         </div>
     </footer>
-
+<div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon" style="left: -50px; bottom: 0; display: block;position: fixed; z-index: 99999999999999999999999">
+  <div class="phonering-alo-ph-circle"></div>
+    <div class="phonering-alo-ph-circle-fill"></div>
+      <a href="tel:"></a>
+       <div class="phonering-alo-ph-img-circle">
+        <a href="tel:0362 556 668"></a>
+        <a href="tel:0362 556 668" class="pps-btn-img " title="{{$setting->phone}}">
+            <img src="https://i.imgur.com/v8TniL3.png" alt="" width="50" onmouseover="this.src = 'https://i.imgur.com/v8TniL3.png';" onmouseout="this.src = 'https://i.imgur.com/v8TniL3.png';">
+        </a>
+  </div>        
+</div>
     
 </body>
 

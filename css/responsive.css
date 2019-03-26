@@ -1,6 +1,13 @@
 @media (max-width: 767px){
-	
-
+	.input-search{
+		width: 290px;
+	}
+	.box-count-cart{
+		margin-top: 10px;
+	}
+	.box-shopping-cart{
+		float:right;
+	}
 }
 @media (min-width: 768px) {
 	
