@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 11, 2019 lúc 02:54 AM
--- Phiên bản máy phục vụ: 10.1.36-MariaDB
--- Phiên bản PHP: 7.2.10
+-- Thời gian đã tạo: Th3 26, 2019 lúc 11:28 AM
+-- Phiên bản máy phục vụ: 10.1.38-MariaDB
+-- Phiên bản PHP: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `webche`
+-- Cơ sở dữ liệu: `hoangtuan`
 --
 
 -- --------------------------------------------------------
@@ -173,7 +173,7 @@ CREATE TABLE `bills` (
 --
 
 INSERT INTO `bills` (`id`, `full_name`, `email`, `phone`, `address`, `province`, `district`, `note`, `status`, `total`, `detail`, `created_at`, `updated_at`, `card_code`, `payment`) VALUES
-(1, 'Hoàng Hồng Chương', 'admin@team.vn', '0987654321', 'Hà Nội', NULL, NULL, 'giao hàng trong giờ hành chính', 1, 2400000, '[{\"product_name\":\"S\\u1ea3n ph\\u1ea9m demo 1\",\"product_numb\":\"2\",\"product_price\":400000,\"product_img\":\"1552104205_sp1.jpg\",\"product_code\":null},{\"product_name\":\"S\\u1ea3n ph\\u1ea9m demo 3\",\"product_numb\":\"4\",\"product_price\":400000,\"product_img\":\"1552105114_sp1.jpg\",\"product_code\":null}]', '2019-03-09 10:16:22', '2019-03-09 10:16:22', NULL, 0);
+(3, 'j', 'chuong1194@yahoo.com', '0987654321', 's', NULL, NULL, 'sdf ư', 0, 2000000, '[{\"product_name\":\"S\\u1ea3n ph\\u1ea9m demo 3\",\"product_numb\":\"5\",\"product_price\":400000,\"product_img\":\"1553591837_giuong1.jpg\",\"product_code\":null}]', '2019-03-26 09:29:35', '2019-03-26 09:29:35', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -563,10 +563,10 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `cate_id`, `user_id`, `name`, `alias`, `photo`, `background`, `mota`, `content`, `status`, `noibat`, `home`, `title`, `keyword`, `description`, `com`, `stt`, `created_at`, `updated_at`) VALUES
-(7, 0, 8, 'Tin tức 4', 'tin-tuc-4', '1552097017_news1.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 4, '2019-03-09 02:05:06', '2019-03-09 02:05:06'),
-(5, 0, 8, 'Tin tức 2', 'tin-tuc-2', '1552097034_news2.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>', 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 2, '2019-03-09 03:17:51', '2019-03-09 03:17:51'),
-(6, 0, 8, 'Tin tức 3', 'tin-tuc-3', '1552097041_news3.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 3, '2019-03-09 02:05:09', '2019-03-09 02:05:09'),
-(4, 0, 8, 'Tin tức 1', 'tin-tuc-1', '1552097051_news4.jpg', '', NULL, NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 1, '2019-03-09 02:05:11', '2019-03-09 02:05:11');
+(7, 0, 8, 'Tin tức 4', 'tin-tuc-4', '1553592895_news1.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 4, '2019-03-26 09:34:55', '2019-03-26 09:34:55'),
+(5, 0, 8, 'Tin tức 2', 'tin-tuc-2', '1553592908_news2.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>', 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 2, '2019-03-26 09:35:08', '2019-03-26 09:35:08'),
+(6, 0, 8, 'Tin tức 3', 'tin-tuc-3', '1553592914_news3.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 3, '2019-03-26 09:35:14', '2019-03-26 09:35:14'),
+(4, 0, 8, 'Tin tức 1', 'tin-tuc-1', '1553592919_news4.jpg', '', NULL, NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 1, '2019-03-26 09:35:19', '2019-03-26 09:35:19');
 
 -- --------------------------------------------------------
 
@@ -727,9 +727,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `user_id`, `cate_id`, `code`, `color_id`, `stt`, `name`, `alias`, `photo`, `price`, `sale`, `price_old`, `mota`, `content`, `thuonghieu`, `tinhtrang`, `baohanh`, `properties`, `model`, `namsanxuat`, `ratepoint`, `quatang`, `huongdan`, `vanchuyen`, `noibat`, `spbc`, `com`, `status`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 0, 1, NULL, NULL, 1, 'Sản phẩm demo 1', 'san-pham-demo-1', '1552104205_sp1.jpg', 400000, 0, 0, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-09 04:03:25', '2019-03-09 04:03:25'),
-(2, 0, 2, NULL, NULL, 2, 'Sản phẩm demo 2', 'san-pham-demo-2', '1552104286_sp2.jpg', 4000000, 0, 0, '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>', NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-09 04:04:46', '2019-03-09 04:04:46'),
-(3, 0, 3, NULL, NULL, 3, 'Sản phẩm demo 3', 'san-pham-demo-3', '1552105114_sp1.jpg', 400000, 0, 0, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-09 04:18:34', '2019-03-09 04:18:34');
+(1, 8, 1, NULL, 'null', 1, 'Sản phẩm demo 1', 'san-pham-demo-1', '1553591848_tap3.jpg', 400000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-26 09:17:28', '2019-03-26 09:17:28'),
+(2, 8, 1, NULL, 'null', 2, 'Sản phẩm demo 2', 'san-pham-demo-2', '1553591682_ban1.jpg', 4000000, 0, 0, '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-26 09:14:42', '2019-03-26 09:14:42'),
+(3, 8, 1, NULL, 'null', 3, 'Sản phẩm demo 3', 'san-pham-demo-3', '1553591837_giuong1.jpg', 400000, 0, 500000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-26 09:21:25', '2019-03-26 09:21:25');
 
 -- --------------------------------------------------------
 
@@ -761,10 +761,10 @@ CREATE TABLE `product_categories` (
 --
 
 INSERT INTO `product_categories` (`id`, `parent_id`, `stt`, `name`, `alias`, `photo`, `noibat`, `mota`, `status`, `lever`, `com`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 0, 1, 'Chè loại 1', 'che-loai-1', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-09 02:35:01', '2019-03-09 02:35:01'),
-(2, 0, 2, 'Chè loại 2', 'che-loai-2', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-09 02:35:33', '2019-03-09 02:35:33'),
-(3, 0, 3, 'Chè loại 3', 'che-loai-3', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-09 02:35:38', '2019-03-09 02:35:38'),
-(4, 0, 4, 'Chè loại 4', 'che-loai-4', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-09 02:35:50', '2019-03-09 02:35:50');
+(1, 0, 1, 'Táp đầu giường', 'tap-dau-giuong', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-26 09:16:01', '2019-03-26 09:16:01'),
+(2, 0, 2, 'Bàn trang điểm', 'ban-trang-diem', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-26 09:15:50', '2019-03-26 09:15:50'),
+(3, 0, 3, 'Tủ', 'tu', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-26 09:15:43', '2019-03-26 09:15:43'),
+(4, 0, 4, 'Giường ngủ', 'giuong-ngu', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-03-26 09:15:29', '2019-03-26 09:15:29');
 
 -- --------------------------------------------------------
 
@@ -919,7 +919,7 @@ CREATE TABLE `setting` (
 --
 
 INSERT INTO `setting` (`id`, `name`, `title`, `company`, `website`, `address`, `phone`, `hotline`, `fax`, `email`, `photo`, `photo_footer`, `photo_page`, `favico`, `title_index`, `mota`, `content`, `facebook`, `twitter`, `skype`, `google`, `youtube`, `status`, `toado`, `copyright`, `iframemap`, `codechat`, `analytics`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'Chè Thái Nguyên', 'Chè Thái Nguyên', 'HTX TỔNG HỢP CHÈ THÀNH CÔNG', NULL, 'Quyết Tiến - Tức Thanh  Phú Lương - Thái Nguyên', '0987654321', '0987654312', NULL, 'acb@gmail.com', '1552096985_logo.png', '1552096985_logo.png', '1542771860_logo1.png', '1552096985_logo.png', NULL, NULL, NULL, 'https://www.facebook.com/FacebookforDevelopers/', 'https://twitter.com/?lang=vi', NULL, 'https://plus.google.com/?hl=vi', NULL, 1, NULL, '0987654312', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7749747466096!2d105.82069491439643!3d21.00165548601309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8429ac32cb%3A0x592668996cef591f!2zMzE1IFRyxrDhu51uZyBDaGluaCwgS2jGsMahbmcgVGjGsOG7o25nLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1531887013298\" width=\"600\" height=\"200\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', NULL, NULL, NULL, NULL, '2019-03-11 01:38:35', '2019-03-11 01:38:35');
+(1, 'Nội thất Hoàng Tuấn', 'Nội thất Hoàng Tuấn', 'Nội thất Hoàng Tuấn', NULL, 'Quyết Tiến - Tức Thanh  Phú Lương - Thái Nguyên', '0987654321', '0987654312', NULL, 'acb@gmail.com', '1553586600_logo.jpg', '1553586600_logofooter.png', '1542771860_logo1.png', '1553586600_logo.jpg', NULL, NULL, NULL, 'https://www.facebook.com/FacebookforDevelopers/', NULL, NULL, 'https://plus.google.com/?hl=vi', NULL, 1, NULL, '0987654312', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7749747466096!2d105.82069491439643!3d21.00165548601309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8429ac32cb%3A0x592668996cef591f!2zMzE1IFRyxrDhu51uZyBDaGluaCwgS2jGsMahbmcgVGjGsOG7o25nLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1531887013298\" width=\"600\" height=\"200\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', NULL, NULL, NULL, NULL, '2019-03-26 07:50:24', '2019-03-26 07:50:24');
 
 -- --------------------------------------------------------
 
@@ -951,7 +951,8 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`id`, `user_id`, `name`, `link`, `photo`, `photo1`, `photo2`, `icon`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
-(2, 8, 'banner', NULL, '1552102565_banner.jpg', '', '', NULL, NULL, NULL, 1, 0, 'gioi-thieu', 2, '2019-03-09 03:36:05', '2019-03-09 03:36:05');
+(2, 8, 'banner', NULL, '1553586856_banner.jpg', '', '', NULL, NULL, NULL, 1, 0, 'gioi-thieu', 2, '2019-03-26 07:54:16', '2019-03-26 07:54:16'),
+(3, 8, '2', NULL, '1553586867_banner.jpg', '', '', NULL, NULL, NULL, 1, 0, 'gioi-thieu', 2, '2019-03-26 07:54:27', '2019-03-26 07:54:27');
 
 -- --------------------------------------------------------
 
@@ -1299,7 +1300,7 @@ ALTER TABLE `banner_position`
 -- AUTO_INCREMENT cho bảng `bills`
 --
 ALTER TABLE `bills`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `campaigns`
@@ -1329,7 +1330,7 @@ ALTER TABLE `colors`
 -- AUTO_INCREMENT cho bảng `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `counter`
@@ -1443,7 +1444,7 @@ ALTER TABLE `setting`
 -- AUTO_INCREMENT cho bảng `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `slogan`
