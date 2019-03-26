@@ -245,7 +245,7 @@ class IndexController extends Controller {
 	public function getNews()
 	{
 		
-		$tintuc = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')->orderby('id','desc')->paginate(10);		
+		$tintuc = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')->orderby('id','desc')->paginate(2);		
 		$hot_news = DB::table('news')->where('status',1)->where('com','tin-tuc')->where('noibat',1)->orderby('id','desc')->take(6)->get();
 		$com='tin-tuc';
 		// Cấu hình SEO
@@ -255,20 +255,6 @@ class IndexController extends Controller {
 		$img_share = '';
 		// End cấu hình SEO
 		return view('templates.news_tpl', compact('tintuc','keyword','description','title','img_share','com','hot_news'));
-	}
-	public function getVanHoa()
-	{
-		
-		$tintuc = DB::table('news')->select()->where('status',1)->where('com','van-hoa')->orderby('id','desc')->paginate(10);		
-		$hot_news = DB::table('news')->where('status',1)->where('com','van-hoa')->where('noibat',1)->orderby('id','desc')->take(6)->get();
-		$com='van-hoa';
-		// Cấu hình SEO
-		$title = "Văn hóa chè";
-		$keyword = "Văn hóa chè";
-		$description = "Văn hóa chè";
-		$img_share = '';
-		// End cấu hình SEO
-		return view('templates.vanhoa_tpl', compact('tintuc','keyword','description','title','img_share','com','cateNews','hot_news'));
 	}
 	public function getListNews($id)
 	{
@@ -303,7 +289,9 @@ class IndexController extends Controller {
 		$news_detail = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')->where('alias',$id)->get()->first();
 		
 		if(!empty($news_detail)){			
-			$cate_pro = DB::table('product_categories')->where('status',1)->where('parent_id',0)->orderby('id','asc')->get();			
+			$cate_pro = DB::table('product_categories')->where('status',1)->where('parent_id',0)->orderby('id','asc')->get();	
+			$newsSameCate = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')
+			->where('id','<>',$news_detail->id)->take(12)->get();		
 			$com='tin-tuc';
 			$setting = Cache::get('setting');
 			// Cấu hình SEO
@@ -316,7 +304,7 @@ class IndexController extends Controller {
 			$description = $news_detail->description;
 			$img_share = asset('upload/news/'.$news_detail->photo);
 
-			return view('templates.news_detail_tpl', compact('news_detail','com','keyword','description','title','img_share'));
+			return view('templates.news_detail_tpl', compact('news_detail','com','keyword','description','title','img_share','newsSameCate'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}

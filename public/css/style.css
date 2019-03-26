@@ -643,3 +643,8 @@ footer{
     font-size: 16px;
     /*text-transform: uppercase;*/
 }
+.paginations{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
