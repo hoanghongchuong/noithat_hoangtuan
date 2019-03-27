@@ -403,6 +403,8 @@ header{
 .des-news{
 	font-size: 15px;
 	text-align: justify;
+	height: 126px;
+	overflow: hidden;
 }
 .img-avatar{
 	width: 100%;

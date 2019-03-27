@@ -70,8 +70,8 @@
             <div class="phonering-alo-ph-circle-fill"></div>
               <a href="tel:"></a>
                <div class="phonering-alo-ph-img-circle">
-                <a href="tel:0362 556 668"></a>
-                <a href="tel:0362 556 668" class="pps-btn-img " title="{{$setting->phone}}">
+                <a href="tel:{{$setting->phone}}"></a>
+                <a href="tel:{{$setting->phone}}" class="pps-btn-img " title="{{$setting->phone}}">
                     <img src="https://i.imgur.com/v8TniL3.png" alt="" width="50" onmouseover="this.src = 'https://i.imgur.com/v8TniL3.png';" onmouseout="this.src = 'https://i.imgur.com/v8TniL3.png';">
                 </a>
           </div>        

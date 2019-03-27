@@ -52,11 +52,11 @@ class IndexController extends Controller {
 	public function index()
 	{
 		
-		$news = DB::table('news')->where('status',1)->where('com','tin-tuc')->take(8)->orderBy('id','desc')->get();
+		$news = DB::table('news')->where('status',1)->where('com','tin-tuc')->take(4)->orderBy('id','desc')->get();
 		$products = DB::table('products')->where('status',1)->take(20)->orderBy('id','desc')->get();
-		$categories_home = ProductCate::where('status',1)->where('com','san-pham')->orderBy('stt','asc')->get();
-		$feedbacks = DB::table('feedback')->get();
-		$partners = DB::table('partner')->get();
+		$categories_home = ProductCate::where('status',1)->where('com','san-pham')->get();
+		
+		$slogans = DB::table('slogan')->get();
 		$setting =DB::table('setting')->select()->where('id',1)->get()->first();
 		$about = DB::table('about')->where('com','gioi-thieu')->first();
 		$title = $setting->title;
@@ -65,7 +65,7 @@ class IndexController extends Controller {
 		$com = 'index';
 		// End cấu hình SEO
 		$img_share = asset('upload/hinhanh/'.$setting->photo);
-		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','partners','products','categories_home','feedbacks','news','about'));
+		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','products','categories_home','slogans','news','about'));
 	}
 	public function getProduct(Request $req)
 	{

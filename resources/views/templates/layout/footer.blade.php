@@ -12,8 +12,9 @@
             </div>
             <div class="col-md-4 col-xs-12 news-letter">
                 <p class="title-newsletter">Để lại email nhận tin khuyến mại</p>
-                <form action="" method="post" accept-charset="utf-8">
-                    <input type="text" value="Nhập email" class="form-control" name="email">
+                <form action="{{route('postNewsletter')}}" method="post" accept-charset="utf-8">
+                    {{csrf_field()}}
+                    <input type="text" placeholder="Nhập email" class="form-control" required="" name="txtEmail">
                     <button type="submit" class="btn-newsletter">Gửi</button>
                 </form>
                 <div class="social">

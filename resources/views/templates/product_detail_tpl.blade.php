@@ -27,7 +27,7 @@
             </div>
             <div class="col-md-6">
                 <h1 class="name_product_detail">{{$product_detail->name}}</h1>
-                <p class="price_detail">Giá: {{number_format($product_detail->price)}} vnđ</p>
+                <p class="price_detail">Giá: {{number_format($product_detail->price)}} VNĐ</p>
                 <div class="des-product">
                     {!! $product_detail->mota !!}
                 </div>
@@ -60,15 +60,15 @@
                     <img src="{{asset('upload/product/'.$post->photo)}}" alt="">
                 </a>
                 @if($post->price_old > $post->price)
-                <div class="sale-of"><span>{{ (100 -($post->price/ $post->price_old)*100) }}%</span></div>
+                <div class="sale-of"><span>{{ round((100 -($post->price/ $post->price_old)*100)) }}%</span></div>
                 @endif
                 <div class="footer-cate">
                     <p class="name_product"><a href="{{url('san-pham/'.$post->alias.'.html')}}" title="">{{$post->name}}</a></p>
                     <div class="price tac">
                         @if($post->price_old > $post->price)
-                        <span class="price_old">{{number_format($post->price_old)}}</span>
+                        <span class="price_old">{{number_format($post->price_old)}} vnđ</span>
                         @endif
-                        <span class="price_news">{{number_format($post->price)}}</span>
+                        <span class="price_news">{{number_format($post->price)}} vnđ</span>
                     </div>
                 </div>
             </div>

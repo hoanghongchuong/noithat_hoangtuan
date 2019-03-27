@@ -53,9 +53,9 @@
                             </a>
                             <div class="price tac">
                                 @if($item->price_old > $item->price)
-                                <span class="price_old">{{number_format($item->price_old)}}</span>
+                                <span class="price_old">{{number_format($item->price_old)}} vnđ</span>
                                 @endif
-                                <span class="price_news">{{number_format($item->price)}}</span>
+                                <span class="price_news">{{number_format($item->price)}} vnđ</span>
                             </div>
                         </div>
                         @endforeach

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 26, 2019 lúc 11:28 AM
+-- Thời gian đã tạo: Th3 27, 2019 lúc 05:39 AM
 -- Phiên bản máy phục vụ: 10.1.38-MariaDB
 -- Phiên bản PHP: 7.3.2
 
@@ -592,6 +592,13 @@ CREATE TABLE `newsletter` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `newsletter`
+--
+
+INSERT INTO `newsletter` (`id`, `user_id`, `name`, `link`, `email`, `phone`, `photo`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
+(2, 0, NULL, NULL, 'acb@gmail.com', NULL, NULL, NULL, NULL, 1, 0, 'newsletter', 0, '2019-03-27 04:38:58', '2019-03-27 04:38:58');
+
 -- --------------------------------------------------------
 
 --
@@ -727,9 +734,13 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `user_id`, `cate_id`, `code`, `color_id`, `stt`, `name`, `alias`, `photo`, `price`, `sale`, `price_old`, `mota`, `content`, `thuonghieu`, `tinhtrang`, `baohanh`, `properties`, `model`, `namsanxuat`, `ratepoint`, `quatang`, `huongdan`, `vanchuyen`, `noibat`, `spbc`, `com`, `status`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 8, 1, NULL, 'null', 1, 'Sản phẩm demo 1', 'san-pham-demo-1', '1553591848_tap3.jpg', 400000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-26 09:17:28', '2019-03-26 09:17:28'),
-(2, 8, 1, NULL, 'null', 2, 'Sản phẩm demo 2', 'san-pham-demo-2', '1553591682_ban1.jpg', 4000000, 0, 0, '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-26 09:14:42', '2019-03-26 09:14:42'),
-(3, 8, 1, NULL, 'null', 3, 'Sản phẩm demo 3', 'san-pham-demo-3', '1553591837_giuong1.jpg', 400000, 0, 500000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-26 09:21:25', '2019-03-26 09:21:25');
+(1, 8, 1, NULL, 'null', 1, 'Sản phẩm demo 1', 'san-pham-demo-1', '1553591848_tap3.jpg', 400000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:09:49', '2019-03-27 03:09:49'),
+(2, 8, 2, NULL, 'null', 2, 'Sản phẩm demo 2', 'san-pham-demo-2', '1553591682_ban1.jpg', 4000000, 0, 5000000, '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:20:25', '2019-03-27 03:20:25'),
+(3, 8, 4, NULL, 'null', 3, 'Sản phẩm demo 3', 'san-pham-demo-3', '1553591837_giuong1.jpg', 400000, 0, 500000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:09:58', '2019-03-27 03:09:58'),
+(4, 0, 3, NULL, NULL, 4, 'Sản phẩm tủ 1', 'san-pham-tu-1', '1553656668_tu1.jpg', 1500000, 0, 20000000, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:17:48', '2019-03-27 03:17:48'),
+(5, 0, 2, NULL, NULL, 5, 'Bàn trang điểm 2', 'ban-trang-diem-2', '1553656808_ban2.jpg', 2000000, 0, 3000000, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:20:08', '2019-03-27 03:20:08'),
+(6, 8, 1, NULL, 'null', 6, 'Táp đầu giường demo', 'tap-dau-giuong-demo', '1553656858_tap4.jpg', 400000, 0, 500000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:22:05', '2019-03-27 03:22:05'),
+(7, 0, 4, NULL, NULL, 7, 'Giường ngủ 3', 'giuong-ngu-3', '1553656968_giuong3.jpg', 1500000, 0, 2000000, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:22:48', '2019-03-27 03:22:48');
 
 -- --------------------------------------------------------
 
@@ -971,6 +982,15 @@ CREATE TABLE `slogan` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `slogan`
+--
+
+INSERT INTO `slogan` (`id`, `name`, `link`, `photo`, `photo2`, `stt`, `content`, `created_at`, `updated_at`) VALUES
+(1, 'TRẢ HÀNG & HOÀN TIỀN', NULL, '1553655733_dola.png', '', 1, '<p>Kh&aacute;ch h&agrave;ng ho&agrave;n trả h&agrave;ng được ho&agrave;n trả 100% số tiền đ&atilde; chi trả trước đ&oacute;</p>', '2019-03-27 03:02:13', '2019-03-27 03:02:13'),
+(2, 'MIỄN PHÍ VẬN CHUYỂN', NULL, '1553655747_car.png', '', 2, '<p>Kh&aacute;ch h&agrave;ng ho&agrave;n trả h&agrave;ng được ho&agrave;n trả 100% số tiền đ&atilde; chi trả trước đ&oacute;</p>', '2019-03-27 03:02:27', '2019-03-27 03:02:27'),
+(3, 'BẢO MẬT THÔNG TIN', NULL, '1553655762_baove.jpg', '', 3, '<p>Kh&aacute;ch h&agrave;ng ho&agrave;n trả h&agrave;ng được ho&agrave;n trả 100% số tiền đ&atilde; chi trả trước đ&oacute;</p>', '2019-03-27 03:02:42', '2019-03-27 03:02:42');
 
 -- --------------------------------------------------------
 
@@ -1330,7 +1350,7 @@ ALTER TABLE `colors`
 -- AUTO_INCREMENT cho bảng `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT cho bảng `counter`
@@ -1390,7 +1410,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT cho bảng `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `news_categories`
@@ -1414,7 +1434,7 @@ ALTER TABLE `partner`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT cho bảng `product_categories`
@@ -1450,7 +1470,7 @@ ALTER TABLE `slider`
 -- AUTO_INCREMENT cho bảng `slogan`
 --
 ALTER TABLE `slogan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `useronline`

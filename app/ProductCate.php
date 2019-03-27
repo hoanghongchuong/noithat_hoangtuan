@@ -26,7 +26,7 @@ class ProductCate extends Model {
 
     public function products()
     {
-        return $this->hasMany('App\Products','cate_id')->take(6)->orderBy('id','desc')->get();
+        return $this->hasMany('App\Products','cate_id')->where('noibat',1)->take(12)->orderBy('id','desc')->get();
     }
 
 }
